@@ -2,7 +2,7 @@ import React,{useEffect,useState} from 'react';
 
 import axios from 'axios';
 import Item from './InventoryItem';
-
+import Sidebar from './sidebar';
 const ViewInventory = () => {
 
     const [listInventory,setInventory] = useState([]);
@@ -22,17 +22,25 @@ const ViewInventory = () => {
 
 
     return(
+        <div className="ViewInventory">
 
-        <div className="InventoryList">
-        {/* <h1 onClick={getInventory} >Hlo</h1> */}
-        { listInventory.map(item =>(
-            <Item Name={item.Name} Qty={item.Meterage} Nos = {item.Nos} img={item.Photo} 
-            Design={item.Design}   HSN={item.HSN}  Fabric={item.Fabric}  Print={item.Print}  Color={item.Color}  QTYinStock={item.Meterage} Make={item.Make}  
-            Remark={item.Remarks}  BillNo={item.Bill[0].BillNumber}  BillDate={item.Bill[0].BillDate}  OrderDate={item.Bill[0].OrderDate} BiltyNo={item.Bill[0].Bilty} Rate={item.Bill[0].CostPricePerUnit}  
-            InChlaanNo={item.Challan[0].ChallanNo}  ChallanDate={item.Challan[0].Date}  Transporter={item.Challan[0].Transporter}  VcNo={item.Challan[0].Vehiclenumber}  GenratedBy={item.Challan[0].Generatedby.Name} 
-             />
-        ))}
+            <Sidebar/>
+
+            <div className="InventoryList">
+            
+            {/* <h1 onClick={getInventory} >Hlo</h1> */}
+            { listInventory.map(item =>(
+                <Item Name={item.Name} Qty={item.Meterage} Nos = {item.Nos} img={item.Photo} 
+                Design={item.Design}   HSN={item.HSN}  Fabric={item.Fabric}  Print={item.Print}  Color={item.Color}  QTYinStock={item.Meterage} Make={item.Make}  
+                Remark={item.Remarks}  BillNo={item.Bill[0].BillNumber}  BillDate={item.Bill[0].BillDate}  OrderDate={item.Bill[0].OrderDate} BiltyNo={item.Bill[0].Bilty} Rate={item.Bill[0].CostPricePerUnit}  
+                InChlaanNo={item.Challan[0].ChallanNo}  ChallanDate={item.Challan[0].Date}  Transporter={item.Challan[0].Transporter}  VcNo={item.Challan[0].Vehiclenumber}  GenratedBy={item.Challan[0].Generatedby.Name} 
+                />
+            ))}
+            </div>
+
         </div>
+        
+       
     )
 }
 

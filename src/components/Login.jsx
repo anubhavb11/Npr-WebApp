@@ -1,60 +1,45 @@
-
-
 import React, { useState } from "react";
-import Form from "react-bootstrap/Form";
+import Form  from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import axios from 'axios'
-// import "./Login.css";
+import {Link,Redirect,useHistory} from 'react-router-dom'
 
-export default function Login() {
+export default function Login(props) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
+  const [user,setUser] = useState({});
   function validateForm() {
     return email.length > 0 && password.length > 0;
   }
 
-  function handleSubmit(event) {
+  const handleSubmit = async (event)=> {
     event.preventDefault();
-  }
-
-  // const handelLogin = async() => {
-  //   const response = await fetch('https://monaalcreationbackend.herokuapp.com/home/signin', { 
-  //     method: 'post', 
-  //     headers: new Headers({
-        
-  //         "UserId": "anubhav@intern",
-  //         "Password": "123456"
-      
-  //     })
-
-  //   });
-  //   const data = await response.json();
-  //   console.log(data);
-
-  // }
-
-  const handelLogin = async() => {
-    const article = {"UserId": "anubhav@intern",
-            "Password": "123456"
-         };
-    const response = await axios.post('https://monaalcreationbackend.herokuapp.com/home/signin', article);
-    // const data = await response.json();
-     console.log(response);
-  }
-
-  // const handelLogin = async() => {
-  // const response = await axios.post(
-  //   'https://monaalcreationbackend.herokuapp.com/home/signin',
    
-  //   { params: { "UserId": "anubhav@intern",
-  //            "Password": "123456"  }
-  //    }
-  // )
-  // console.log(response.data)
-  // }
+    const article = {
+      "UserId": `${email}`,
+      "Password": `${password}`
+     
+    };
+    const response = await axios.post('https://monaalcreationbackend.herokuapp.com/home/signin', article);
 
+    console.log(response.data);
+    setUser(response.data);
+    setCookieFunction(response.data);
+    if(response!=null){
+     props.history.push('/')
+    }
+
+  }
+  const setCookieFunction = (value) => {
+    
+    localStorage.setItem('token',  JSON.stringify(value));
+    console.log("DOME")
+  }
+  
+
+  
   return (
+    
     <div className="Login">
       <h1>Monaal Creation</h1>
       <Form onSubmit={handleSubmit}>
@@ -75,9 +60,12 @@ export default function Login() {
             onChange={(e) => setPassword(e.target.value)}
           />
         </Form.Group>
-        <Button block size="lg" onClick={handelLogin} type="submit" disabled={!validateForm()}>
+        
+        <Button block size="lg" type="submit" disabled={!validateForm()}>
           Login
         </Button>
+        
+       
       </Form>
     </div>
   );

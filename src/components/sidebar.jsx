@@ -1,8 +1,28 @@
 import { ProSidebar, SidebarHeader, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
 import 'react-pro-sidebar/dist/css/styles.css';
-import {Link} from 'react-router-dom'
+import {Redirect, Link} from 'react-router-dom'
+import React ,{useState}from 'react';
 
-const Sidebar = () =>{
+const Sidebar = (props) =>{
+
+
+  // VERIFICATION
+  const data = window.localStorage.getItem('token');
+  // const data1 = data.json();
+  
+  if(data == null){
+
+    return  <Redirect to="/login" />
+  }
+
+
+  // Prevent sidebar on login page
+  // const {pathname} = props.location;
+  // console.log(pathname);
+  // if(pathname === "/login") {
+  //   return null;
+  // }
+
 
     return (
 <ProSidebar className="pro-sidebar">

@@ -36,6 +36,7 @@ code {
 
 .Login{
   padding-top: 10rem;
+  margin: 0 auto;
 }
 
 .Login form {
@@ -81,8 +82,14 @@ code {
 
 .InventoryList{
   flex: 1;
+  
 }
 
+.ViewInventory{
+  display: flex;
+  width: 100%;
+ 
+}
 
 
 /* Inventory List */

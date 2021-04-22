@@ -5,7 +5,7 @@ const  item  = ({Name,Qty,Nos,img,
      Design,   HSN,  Fabric,  Print,  Color  ,QTYinStock, Make,  Remark , 
      BillNo ,  BillDate,  OrderDate,BiltyNo, Rate, 
       InChlaanNo , ChallanDate , Transporter  ,VcNo, GenratedBy }) =>{
-          console.log({BillNo})
+    
     return(
         <div className="inventoryItem">
             <Accordion>
