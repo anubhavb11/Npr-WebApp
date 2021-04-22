@@ -8,6 +8,7 @@ const Sidebar = (props) =>{
 
   // VERIFICATION
   const data = window.localStorage.getItem('token');
+  // console.log(props)
   // const data1 = data.json();
   
   if(data == null){
@@ -32,11 +33,30 @@ const Sidebar = (props) =>{
   </SidebarHeader>
   <Menu className="pro-sidebar-menu" iconShape="square" popperArrow='true'>
     <SubMenu className="pro-sidebar-sub-menu" title="Inventory" >
-      <Link to='/viewInventory'>
-      <MenuItem>View Inventory</MenuItem>
-      </Link>
+      <div className="m1">
+        
+        
+        <MenuItem>
+        <Link to='/viewInventory'/>
+        View Inventory
+       
+        </MenuItem>
+        
+      </div>
      
-      <MenuItem>View Summary</MenuItem>
+      <div className="m2">
+       
+        <MenuItem>
+        <Link to='/viewSummary'/>
+        View Summary
+        
+        </MenuItem>
+      
+
+      </div>
+     
+     
+     
     </SubMenu>
     <SubMenu className="pro-sidebar-sub-menu" title="Components" >
       <MenuItem>Component 1</MenuItem>
