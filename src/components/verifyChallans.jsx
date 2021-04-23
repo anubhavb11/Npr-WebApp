@@ -18,7 +18,7 @@ const VerifyChallans = () => {
       
     }
 
-    useEffect(getChallan,[])
+    useEffect(getChallan,[]);
 
     return(
         <div className="VerifyChallans">

@@ -26,14 +26,13 @@ export default function Login(props) {
     setUser(response.data);
     setCookieFunction(response.data);
     if(response!=null){
-     props.history.push('/')
+      props.history.push('/')
     }
 
   }
   const setCookieFunction = (value) => {
     
     localStorage.setItem('token',  JSON.stringify(value));
-    console.log("DOME")
   }
   
 

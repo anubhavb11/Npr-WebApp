@@ -22,11 +22,11 @@ const ViewInventory = () => {
 
 
     return(
-        <div className="ViewInventory">
+        <div className="right_of_sidebar ViewInventory">
 
             <Sidebar/>
 
-            <div className="InventoryList">
+            <div className="right_of_sidebar_list InventoryList">
             
             {/* <h1 onClick={getInventory} >Hlo</h1> */}
             { listInventory.map(item =>(
