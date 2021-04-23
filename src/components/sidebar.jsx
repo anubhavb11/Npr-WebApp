@@ -58,9 +58,11 @@ const Sidebar = (props) =>{
      
      
     </SubMenu>
-    <SubMenu className="pro-sidebar-sub-menu" title="Components" >
+    <SubMenu className="pro-sidebar-sub-menu" title="Sales/Out Challan" >
       <MenuItem>Component 1</MenuItem>
-      <MenuItem>Component 2</MenuItem>
+      <Link to='/verifyChallans'>
+      <MenuItem>Verify Challans</MenuItem>
+      </Link>
     </SubMenu>
     <SubMenu className="pro-sidebar-sub-menu" title="Components" >
       <MenuItem>Component 1</MenuItem>

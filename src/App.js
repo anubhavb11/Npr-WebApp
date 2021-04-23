@@ -8,6 +8,8 @@ import Dashboard from './components/dashbord'
 import  ViewSummary from './components/ViewSummary'
 // import './custom.scss'
 import ViewInventory from './components/ViewInventory'
+import verifyChallans from './components/verifyChallans'
+
 export default class App extends React.Component {
   render(){
     return(
@@ -18,9 +20,13 @@ export default class App extends React.Component {
           <Route path='/' exact component={Dashboard} />
           <Route path='/login'   component={LogIn} />
           <Route path='/viewInventory' component={ViewInventory} />
+{/* <<<<<<< HEAD */}
           <Route path='/viewSummary' component={ViewSummary} />
         
 
+{/* ======= */}
+          <Route path='/verifyChallans' component={verifyChallans} />
+{/* >>>>>>> Nisha */}
        </div>
 
       </Router>

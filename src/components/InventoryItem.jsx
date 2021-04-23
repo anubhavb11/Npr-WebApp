@@ -1,10 +1,10 @@
 import React from 'react';
 import {Accordion,Card,Button }from 'react-bootstrap';
 
-const  item  = ({Name,Qty,Nos,img, 
+const  item  = ({Name,Qty,Nos,img,
      Design,   HSN,  Fabric,  Print,  Color  ,QTYinStock, Make,  Remark , 
      BillNo ,  BillDate,  OrderDate,BiltyNo, Rate, 
-      InChlaanNo , ChallanDate , Transporter  ,VcNo, GenratedBy }) =>{
+     InChlaanNo , ChallanDate , Transporter  ,VcNo, GenratedBy }) =>{
     
     return(
         <div className="inventoryItem">
@@ -17,17 +17,18 @@ const  item  = ({Name,Qty,Nos,img,
                             <div className="inventory-item-img">
                                 <img src={img} alt="" srcset=""/>
                             </div>
-                            <div className="inventory-item-list-info">
-                                <div className="inventory-item-name">
+                            
+                        <div className="inventory-item-list-info">
+                                <div className="inventory-item-Name">
                                 Name:  {Name}
                                 </div>
-                                <div className="inventory-item-qty">
+                                <div className="challan-item-qty">
                                 Qty:  {Qty}
                                 </div>
                                 <div className="inventory-item-Nos">
                                 Nos:  {Nos}
                                 </div>
-                            </div>
+                        </div>
                            
                     
                         </div>
