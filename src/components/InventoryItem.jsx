@@ -22,7 +22,7 @@ const  item  = ({Name,Qty,Nos,img,
                                 <div className="inventory-item-Name">
                                 Name:  {Name}
                                 </div>
-                                <div className="challan-item-qty">
+                                <div className="inventory-item-qty">
                                 Qty:  {Qty}
                                 </div>
                                 <div className="inventory-item-Nos">

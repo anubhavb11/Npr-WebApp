@@ -7,7 +7,7 @@ import Sidebar from './components/sidebar'
 import Dashboard from './components/dashbord'
 // import './custom.scss'
 import ViewInventory from './components/ViewInventory'
-import verifyChallans from './components/verifyChallans'
+import verifyChallans from './components/VerifyChallans'
 
 export default class App extends React.Component {
   render(){
