@@ -8,7 +8,7 @@ import Dashboard from './components/dashbord'
 import  ViewSummary from './components/ViewSummary'
 // import './custom.scss'
 import ViewInventory from './components/ViewInventory'
-import verifyChallans from './components/VerifyChallans'
+import verifyChallans from './components/verifyChallans'
 
 export default class App extends React.Component {
   render(){

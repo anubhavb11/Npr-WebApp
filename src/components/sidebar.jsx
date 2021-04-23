@@ -60,7 +60,7 @@ const Sidebar = (props) =>{
     </SubMenu>
     <SubMenu className="pro-sidebar-sub-menu" title="Sales/Out Challan" >
       <MenuItem>Component 1</MenuItem>
-      <Link to='/VerifyChallans'>
+      <Link to='/verifyChallans'>
       <MenuItem>Verify Challans</MenuItem>
       </Link>
     </SubMenu>

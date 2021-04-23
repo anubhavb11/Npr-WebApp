@@ -1,11 +1,12 @@
 import React,{useEffect,useState} from 'react';
 
 import axios from 'axios';
-import Item from './ChallanItem';
+import Item from './challanItem';
 import Sidebar from './sidebar';
+
 const VerifyChallans = () => {
 
-    const [listChallan,setChallan] = useState([]);
+    const [challanList,setChallan] = useState([]);
 
     const getChallan = async() =>{
         const headers = {
@@ -14,22 +15,26 @@ const VerifyChallans = () => {
        const response = await  axios.get('https://monaalcreationbackend.herokuapp.com/home/getchallan?Type=Out&Verified=0', { headers });
        console.log(response.data);
        setChallan(response.data);
-       console.log(listChallan);
+       
       
     }
 
     useEffect(getChallan,[]);
+    console.log(challanList);
 
     return(
-        <div className="VerifyChallans">
+    
+        <div className="right_of_sidebar verifyChallans">
+            {console.log(challanList)}
 
             <Sidebar/>
 
-            <div className="ChallanList">
+            <div className="right_of_sidebar_list challanList">
             
             {/* <h1 onClick={getChallan} >Hlo</h1> */}
-            {listChallan.map(item =>(
-                <Item ChallanNo={item.ChallanNo} Date={item.Date} Typeofchallan={item.Typeofchallan} Party={item.Client.FirmName}/>
+            { challanList.map(item =>(
+                <Item ChallanNo={item.ChallanNo} ChallanDate={item.Date} Typeofchallan={item.Typeofchallan} Party={item.Client.FirmName} 
+                Address={item.Client.Address.StreetAddress} GSTIN={item.Client.GSTIN} ContactPerson={item.Client.NameofPerson}/>
             ))}
             </div>
 
