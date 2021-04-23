@@ -80,16 +80,15 @@ code {
 }
 
 
-.InventoryList{
-  flex: 1;
-  
-}
-
-.ViewInventory{
+.right_of_sidebar{
   display: flex;
   width: 100%;
  
 }
+.right_of_sidebar_list{
+  flex: 1;
+}
+
 
 
 /* Inventory List */
@@ -120,3 +119,4 @@ code {
   display: flex;
   justify-content: space-around;
 }
+

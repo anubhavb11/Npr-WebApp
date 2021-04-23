@@ -1,6 +1,6 @@
 import React from 'react';
 import {Accordion,Card,Button }from 'react-bootstrap';
-
+// import Sidebar from 
 const  item  = ({Name,Qty,Nos,img,
      Design,   HSN,  Fabric,  Print,  Color  ,QTYinStock, Make,  Remark , 
      BillNo ,  BillDate,  OrderDate,BiltyNo, Rate, 

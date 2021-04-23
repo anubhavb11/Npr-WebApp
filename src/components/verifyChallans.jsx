@@ -23,12 +23,12 @@ const VerifyChallans = () => {
 
     return(
     
-        <div className="verifyChallans">
+        <div className="right_of_sidebar verifyChallans">
             {console.log(challanList)}
 
             <Sidebar/>
 
-            <div className="challanList">
+            <div className="right_of_sidebar_list challanList">
             
             {/* <h1 onClick={getChallan} >Hlo</h1> */}
             { challanList.map(item =>(
