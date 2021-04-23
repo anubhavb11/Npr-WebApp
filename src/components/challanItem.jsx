@@ -2,6 +2,7 @@ import React from 'react';
 import {Accordion,Card,Button }from 'react-bootstrap';
 
 const  Item  = ({challanNo,challanDate,Typeofchallan,Party }) =>{
+    console.log(challanNo,challanDate,Typeofchallan,Party);
     
     return(
         <div className="challanItem">

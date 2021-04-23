@@ -14,14 +14,17 @@ const VerifyChallans = () => {
        const response = await  axios.get('https://monaalcreationbackend.herokuapp.com/home/getchallan?Type=Out&Verified=1', { headers });
        console.log(response.data);
        setChallan(response.data);
-       console.log(challanList);
+       
       
     }
 
-    useEffect(getChallan,[])
+    useEffect(getChallan,[]);
+    console.log(challanList);
 
     return(
+    
         <div className="verifyChallans">
+            {console.log(challanList)}
 
             <Sidebar/>
 
@@ -29,7 +32,7 @@ const VerifyChallans = () => {
             
             {/* <h1 onClick={getChallan} >Hlo</h1> */}
             { challanList.map(item =>(
-                <Item challanNo={item.challanNo} challanDate={item.Date} TypeOfchallan={item.Typeofchallan} Party={item.FirmName} 
+                <Item challanNo={item.ChallanNo} challanDate={item.Date} TypeOfchallan={item.Typeofchallan} Party={item.FirmName} 
                 /*Design={item.Design}   HSN={item.HSN}  Fabric={item.Fabric}  Print={item.Print}  Color={item.Color}  QTYinStock={item.Meterage} Make={item.Make}  
                 Remark={item.Remarks}  BillNo={item.Bill[0].BillNumber}  BillDate={item.Bill[0].BillDate}  OrderDate={item.Bill[0].OrderDate} BiltyNo={item.Bill[0].Bilty} Rate={item.Bill[0].CostPricePerUnit}  
                 InChlaanNo={item.Challan[0].ChallanNo}  ChallanDate={item.Challan[0].Date}  Transporter={item.Challan[0].Transporter}  VcNo={item.Challan[0].Vehiclenumber}  GenratedBy={item.Challan[0].Generatedby.Name}*/
