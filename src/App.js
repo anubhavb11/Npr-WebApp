@@ -7,8 +7,9 @@ import Sidebar from './components/sidebar'
 import Dashboard from './components/dashbord'
 import  ViewSummary from './components/ViewSummary'
 // import './custom.scss'
-import ViewInventory from './components/ViewInventory'
-import verifyChallans from './components/verifyChallans'
+import ViewInventory from './components/ViewInventory/ViewInventory'
+import verifyChallans from './components/VerifyChallans/verifyChallans'
+import ViewChallan from './components/ViewChallans/ViewChalln';
 
 export default class App extends React.Component {
   render(){
@@ -22,6 +23,7 @@ export default class App extends React.Component {
           <Route path='/viewInventory' component={ViewInventory} />
 {/* <<<<<<< HEAD */}
           <Route path='/viewSummary' component={ViewSummary} />
+          <Route path='/viewChallan' component={ViewChallan} />
         
 
 {/* ======= */}

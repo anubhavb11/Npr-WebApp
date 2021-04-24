@@ -33,7 +33,7 @@ const Sidebar = (props) =>{
   </SidebarHeader>
   <Menu className="pro-sidebar-menu" iconShape="square" popperArrow='true'>
     <SubMenu className="pro-sidebar-sub-menu" title="Inventory" >
-      <div className="m1">
+     
         
         
         <MenuItem>
@@ -42,9 +42,8 @@ const Sidebar = (props) =>{
        
         </MenuItem>
         
-      </div>
      
-      <div className="m2">
+     
        
         <MenuItem>
         <Link to='/viewSummary'/>
@@ -53,16 +52,29 @@ const Sidebar = (props) =>{
         </MenuItem>
       
 
-      </div>
+    
      
      
      
     </SubMenu>
     <SubMenu className="pro-sidebar-sub-menu" title="Sales/Out Challan" >
-      <MenuItem>Component 1</MenuItem>
-      <Link to='/verifyChallans'>
-      <MenuItem>Verify Challans</MenuItem>
-      </Link>
+
+
+
+    <MenuItem>
+        <Link to='/verifyChallans'/>
+        Verify Challan
+        
+    </MenuItem>
+
+
+    <MenuItem>
+        <Link to='/viewChallan'/>
+        View Challan
+        
+    </MenuItem>
+
+
     </SubMenu>
     <SubMenu className="pro-sidebar-sub-menu" title="Components" >
       <MenuItem>Component 1</MenuItem>

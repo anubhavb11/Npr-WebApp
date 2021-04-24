@@ -1,8 +1,7 @@
 import React,{useEffect,useState} from 'react';
-
 import axios from 'axios';
 import Item from './InventoryItem';
-import Sidebar from './sidebar';
+import Sidebar from '../sidebar';
 const ViewInventory = () => {
 
     const [listInventory,setInventory] = useState([]);

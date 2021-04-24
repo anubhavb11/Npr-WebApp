@@ -2,7 +2,7 @@ import React,{useEffect,useState} from 'react';
 
 import axios from 'axios';
 import Item from './challanItem';
-import Sidebar from './sidebar';
+import Sidebar from '../sidebar';
 
 const VerifyChallans = () => {
 
