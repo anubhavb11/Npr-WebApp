@@ -14,10 +14,11 @@ const ViewChallan = () => {
        const response = await  axios.get('https://monaalcreationbackend.herokuapp.com/home/getchallan?Type=Out&Verified=1', { headers });
        console.log(response.data);
        setChallan(response.data);
-       console.log(listChallan);
+       
 
     }
     useEffect(getChallan,[]);
+    console.log(listChallan);
     return(
         <div className="right_of_sidebar ViewInventory">
 
