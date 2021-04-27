@@ -25,7 +25,7 @@ const ViewChallan = () => {
                 <div className="right_of_sidebar_list ChallanList">
                 {/* <h1 onClick={getChallan} >Hlo</h1> */}
                 { listChallan.map(item =>(
-                    <Item ChallanNo={item.ChallanNo} Date={item.Date} Typeofchallan = {item.Typeofchallan} Party={item.Client.FirmName}
+                    <Item ChallanId={item._id}  ChallanNo={item.ChallanNo} Date={item.Date} Typeofchallan = {item.Typeofchallan} Party={item.Client.FirmName}
                     />
                 ))}
                 </div>

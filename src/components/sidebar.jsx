@@ -62,36 +62,36 @@ const Sidebar = (props) =>{
 
 
     <MenuItem>
-        <Link to='/verifyChallans'/>
-        Verify Challan
-        
-    </MenuItem>
-
-
-    <MenuItem>
         <Link to='/viewChallan'/>
         View Challan
         
     </MenuItem>
 
 
+    <MenuItem>
+        <Link to='/verifyChallans'/>
+        Verify Challan
+        
+    </MenuItem>
+
+
     </SubMenu>
-    <SubMenu className="pro-sidebar-sub-menu" title="Components" >
-      <MenuItem>Component 1</MenuItem>
-      <MenuItem>Component 2</MenuItem>
+    <SubMenu className="pro-sidebar-sub-menu" title="Client/Customer/Suppliers" >
+      <MenuItem>Add New Client/Customer/Supplier</MenuItem>
+      <MenuItem>View Client/Customer/Supplier</MenuItem>
     </SubMenu>
-    <SubMenu className="pro-sidebar-sub-menu" title="Components" >
-      <MenuItem>Component 1</MenuItem>
-      <MenuItem>Component 2</MenuItem>
+    <SubMenu className="pro-sidebar-sub-menu" title="Users" >
+      <MenuItem>Add New User</MenuItem>
+      <MenuItem>View Users</MenuItem>
     </SubMenu>
 
-    <SubMenu className="pro-sidebar-sub-menu" title="Components" >
-      <MenuItem>Component 1</MenuItem>
-      <MenuItem>Component 2</MenuItem>
+    <SubMenu className="pro-sidebar-sub-menu" title="PO" >
+      <MenuItem>Create New PO</MenuItem>
+      <MenuItem>View PO</MenuItem>
     </SubMenu>
-    <SubMenu className="pro-sidebar-sub-menu" title="Components" >
-      <MenuItem>Component 1</MenuItem>
-      <MenuItem>Component 2</MenuItem>
+    <SubMenu className="pro-sidebar-sub-menu" title="Payment" >
+      <MenuItem>Add Payment Note</MenuItem>
+      <MenuItem>View Payments</MenuItem>
     </SubMenu>
 
     <MenuItem >

@@ -2,7 +2,7 @@ import React from 'react';
 import {Accordion,Card,Button }from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-const  Item  = ({ChallanNo,Date,Typeofchallan,Party }) =>{
+const  Item  = ({ChallanId,ChallanNo,Date,Typeofchallan,Party }) =>{
 
     console.log('ChallanNo');
     return(
@@ -12,9 +12,9 @@ const  Item  = ({ChallanNo,Date,Typeofchallan,Party }) =>{
                     <Card.Header>
                     <Accordion.Toggle  as={Card.Header}    variant="link" eventKey="0">
 
-                        <div className='challan-item-list'>
+                        <div className='inventory-item-list'>
 
-                            <div className="challan-item-list-info">
+                            <div className="inventory-item-list-info">
                                 <div className="challan-item-challanno">
                                 Challan No:  {ChallanNo}
                                 </div>
@@ -35,7 +35,7 @@ const  Item  = ({ChallanNo,Date,Typeofchallan,Party }) =>{
                     </Card.Header>
                     <Accordion.Collapse eventKey="0">
                         <Card.Body>
-                            <Link to="/OutChallan" >
+                            <Link to={{pathname:"/viewOutChallan",state:{ChallanId:ChallanId}}} >
                                 <b>Go to OUT CHALLAN</b>
                             </Link>
                         </Card.Body>
