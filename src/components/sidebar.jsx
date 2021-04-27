@@ -93,6 +93,13 @@ const Sidebar = (props) =>{
       <MenuItem>Component 1</MenuItem>
       <MenuItem>Component 2</MenuItem>
     </SubMenu>
+
+    <MenuItem >
+    
+    <Link to='/developers'/>
+        Developers
+        
+    </MenuItem>
   </Menu>
 </ProSidebar>
     )

@@ -130,3 +130,45 @@ code {
 }
 
 
+
+
+
+/* Developers */
+
+.dev_list{
+  display: flex;
+  /* width: 100%; */
+  flex-direction: column;
+}
+
+.dev_heading{
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+}
+
+
+.dev_list_1{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.dev_list_2{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+.dev_list_3{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
