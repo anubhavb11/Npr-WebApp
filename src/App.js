@@ -10,6 +10,7 @@ import  ViewSummary from './components/ViewSummary'
 import ViewInventory from './components/ViewInventory/ViewInventory'
 import verifyChallans from './components/VerifyChallans/verifyChallans'
 import ViewChallan from './components/ViewChallans/ViewChalln';
+import ViewOutChallan from './components/ViewChallans/ViewOutChallan';
 
 export default class App extends React.Component {
   render(){
@@ -21,14 +22,14 @@ export default class App extends React.Component {
           <Route path='/' exact component={Dashboard} />
           <Route path='/login'   component={LogIn} />
           <Route path='/viewInventory' component={ViewInventory} />
-{/* <<<<<<< HEAD */}
+
           <Route path='/viewSummary' component={ViewSummary} />
           <Route path='/viewChallan' component={ViewChallan} />
-        
+          <Route path='/viewOutChallan' render={(props)=>props.location.state?<ViewOutChallan ChallanId={props.location.state.ChallanId} /> :<ViewOutChallan/> } />
 
-{/* ======= */}
+
           <Route path='/verifyChallans' component={verifyChallans} />
-{/* >>>>>>> Nisha */}
+
        </div>
 
       </Router>
