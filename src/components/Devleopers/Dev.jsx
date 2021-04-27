@@ -9,7 +9,15 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Sidebar from '../sidebar'
 import AnubhavImg from './img/anubhav.jpg';
-import JoyetaImg from './img/joyeta.jpg'
+import JoyetaImg from './img/joyeta.jpg';
+import ArjitImg from './img/Arjit.jpeg';
+import NikhilImg from './img/Nikhil.jpg';
+import NishaImg from './img/Nisha.jpg';
+import RahulImg from './img/Rahul.jpg';
+import SiddhantImg from './img/Siddhant.jpg';
+import PiyushImg from './img/Piyush.jpg';
+import AdityaImg from './img/Aditya.jpg';
+
 const useStyles = makeStyles({
   root: {
     maxWidth: 345,
@@ -53,8 +61,7 @@ export default function Dev() {
                   Anubhav Bansal
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                  Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                  across all continents except Antarctica
+                  Delhi Technical Campus
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -72,8 +79,7 @@ export default function Dev() {
                 Joyeta Saha
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                  Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                  across all continents except Antarctica
+                  Delhi Technical Campus
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -83,16 +89,15 @@ export default function Dev() {
             <CardActionArea>
               <CardMedia
                 className={classes.media}
-                image="/static/images/cards/contemplative-reptile.jpg"
+                image={NishaImg}
                 title="Contemplative Reptile"
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="h2">
-                  Lizard
+                  Nisha
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                  Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                  across all continents except Antarctica
+                  Delhi Technical Campus
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -108,16 +113,15 @@ export default function Dev() {
             <CardActionArea>
               <CardMedia
                 className={classes.media}
-                image="/static/images/cards/contemplative-reptile.jpg"
+                image={NikhilImg}
                 title="Contemplative Reptile"
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="h2">
-                  Lizard
+                  Nikhil 
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                  Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                  across all continents except Antarctica
+                  Delhi Technical Campus
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -127,16 +131,15 @@ export default function Dev() {
             <CardActionArea>
               <CardMedia
                 className={classes.media}
-                image="/static/images/cards/contemplative-reptile.jpg"
+                image={RahulImg}
                 title="Contemplative Reptile"
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="h2">
-                  Lizard
+                  Rahul
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                  Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                  across all continents except Antarctica
+                  Delhi Technical Campus
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -147,16 +150,15 @@ export default function Dev() {
             <CardActionArea>
               <CardMedia
                 className={classes.media}
-                image="/static/images/cards/contemplative-reptile.jpg"
+                image={ArjitImg}
                 title="Contemplative Reptile"
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="h2">
-                  Lizard
+                Arijit
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                  Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                  across all continents except Antarctica
+                  Delhi Technical Campus
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -177,16 +179,15 @@ export default function Dev() {
               <CardActionArea>
                 <CardMedia
                   className={classes.media}
-                  image="/static/images/cards/contemplative-reptile.jpg"
+                  image={SiddhantImg}
                   title="Contemplative Reptile"
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="h2">
-                    Lizard
+                    Siddanth 
                   </Typography>
                   <Typography variant="body2" color="textSecondary" component="p">
-                    Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                    across all continents except Antarctica
+                  SCRIET,CCS University Campus,Meerut
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -197,16 +198,15 @@ export default function Dev() {
             <CardActionArea>
               <CardMedia
                 className={classes.media}
-                image="/static/images/cards/contemplative-reptile.jpg"
+                image={PiyushImg}
                 title="Contemplative Reptile"
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="h2">
-                  Lizard
+                  Piyush
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                  Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                  across all continents except Antarctica
+                Sushila Devi Bansal College Of Technology 
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -217,16 +217,15 @@ export default function Dev() {
             <CardActionArea>
               <CardMedia
                 className={classes.media}
-                image="/static/images/cards/contemplative-reptile.jpg"
+                image={AdityaImg}
                 title="Contemplative Reptile"
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="h2">
-                  Lizard
+                  Aditya
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                  Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                  across all continents except Antarctica
+                  Delhi Technical Campus
                 </Typography>
               </CardContent>
             </CardActionArea>
