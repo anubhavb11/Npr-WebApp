@@ -15,17 +15,15 @@ const VerifyChallans = () => {
        const response = await  axios.get('https://monaalcreationbackend.herokuapp.com/home/getchallan?Type=Out&Verified=0', { headers });
        console.log(response.data);
        setChallan(response.data);
-       
+       console.log(challanList);
       
     }
 
     useEffect(getChallan,[]);
-    console.log(challanList);
 
     return(
     
         <div className="right_of_sidebar verifyChallans">
-            {console.log(challanList)}
 
             <Sidebar/>
 
@@ -33,8 +31,7 @@ const VerifyChallans = () => {
             
             {/* <h1 onClick={getChallan} >Hlo</h1> */}
             { challanList.map(item =>(
-                <Item ChallanNo={item.ChallanNo} ChallanDate={item.Date} Typeofchallan={item.Typeofchallan} Party={item.Client.FirmName} 
-                Address={item.Client.Address.StreetAddress} GSTIN={item.Client.GSTIN} ContactPerson={item.Client.NameofPerson}/>
+                <Item ChallanId={item._id} ChallanNo={item.ChallanNo} Date={item.Date} Typeofchallan={item.Typeofchallan} Party={item.Client.FirmName}/>
             ))}
             </div>
 

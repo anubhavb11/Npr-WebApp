@@ -9,6 +9,7 @@ import  ViewSummary from './components/ViewSummary'
 // import './custom.scss'
 import ViewInventory from './components/ViewInventory/ViewInventory'
 import verifyChallans from './components/VerifyChallans/verifyChallans'
+import VerifyOutChallan from './components/VerifyChallans/verifyOutChallan'
 import ViewChallan from './components/ViewChallans/ViewChalln';
 import ViewOutChallan from './components/ViewChallans/ViewOutChallan';
 import Dev from './components/Devleopers/Dev'
@@ -28,6 +29,9 @@ export default class App extends React.Component {
           <Route path='/viewOutChallan' render={(props)=>props.location.state?<ViewOutChallan ChallanId={props.location.state.ChallanId} /> :<ViewOutChallan/> } />
           <Route path='/verifyChallans' component={verifyChallans} />
           <Route path='/developers' component={Dev} />
+          <Route path='/verifyOutChallan' render={(props)=>props.location.state?<VerifyOutChallan ChallanId={props.location.state.ChallanId} /> :<VerifyOutChallan/> } />
+          <Route path='/developers' component={Dev}/>
+
        </div>
 
       </Router>

@@ -1,8 +1,9 @@
 import React from 'react';
 import {Accordion,Card,Button }from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
-const  Item  = ({ChallanNo,ChallanDate,Typeofchallan,Party,Address,GSTIN,ContactPerson  }) =>{
-    console.log(ChallanNo,ChallanDate,Typeofchallan,Party,Address,GSTIN,ContactPerson );
+const  Item  = ({ChallanId,ChallanNo,Date,Typeofchallan,Party  }) =>{
+    console.log(ChallanId,ChallanNo,Date,Typeofchallan,Party );
           
     return(
         <div className="challanItem">
@@ -18,7 +19,7 @@ const  Item  = ({ChallanNo,ChallanDate,Typeofchallan,Party,Address,GSTIN,Contact
                                 Challan No:  {ChallanNo}
                                 </div>
                                 <div className="challan-item-ChallanDate">
-                                Challan Date:  {ChallanDate}
+                                Challan Date:  {Date}
                                 </div>
                                 <div className="challan-item-Typeofchallan">
                                 Type of challan:  {Typeofchallan}
@@ -33,29 +34,9 @@ const  Item  = ({ChallanNo,ChallanDate,Typeofchallan,Party,Address,GSTIN,Contact
                     </Card.Header>
                     <Accordion.Collapse eventKey="0">
                     <Card.Body>
-                        <div className="out_challan_details">
-                            <div className="out_challan_details_1 out_challan_details_info ">
-                                <center>
-                                    <h5>OUT CHALLAN</h5>
-                                    <h3 class="heading">Monaal Creation</h3>
-                                    <p>G,F 2819,A Churiya Mohalla Vill, Tughalkabad, New Delhi-110044</p>
-                                    <p>Date: {ChallanDate} &nbsp;&nbsp;&nbsp;&nbsp; Challan No.: {ChallanNo}</p>
-                                </center>
-                                <hr class="between" />
-
-                            <div className="out_challan_details_2 out_challan_details">
-                              <dl>
-                                <dt>&emsp;&emsp;&emsp;&emsp;&emsp; Party: {Party}</dt>
-                                <dt>&emsp;&emsp;&emsp;&emsp;&emsp; Address: {Address}</dt>
-                                <dt>&emsp;&emsp;&emsp;&emsp;&emsp; GSTIN: {GSTIN}</dt>
-                                <dt>&emsp;&emsp;&emsp;&emsp;&emsp; Contact Person: {ContactPerson}</dt>
-                             </dl>
-                             <hr class="between" />
-                            </div>
-                            </div>
-
-
-                        </div>
+                    <Link to={{pathname:"/verifyOutChallan",state:{ChallanId:ChallanId}}} >
+                                <b>Go to Out Challan</b>
+                            </Link>
                 
                         </Card.Body>
                     </Accordion.Collapse>
