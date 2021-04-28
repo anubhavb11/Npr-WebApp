@@ -184,3 +184,19 @@ code {
 .challanNo{
   text-align: center;
 }
+
+
+
+/* For Client component */
+.ViewClient{
+  display: flex;
+  width: 100%;
+ 
+}
+.Clientinfo-list
+{
+  border: 1px solid black;
+  display: flex;
+  padding: 1rem;
+  /* justify-content: space-around; */
+}

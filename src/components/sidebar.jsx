@@ -78,7 +78,10 @@ const Sidebar = (props) =>{
     </SubMenu>
     <SubMenu className="pro-sidebar-sub-menu" title="Client/Customer/Suppliers" >
       <MenuItem>Add New Client/Customer/Supplier</MenuItem>
-      <MenuItem>View Client/Customer/Supplier</MenuItem>
+      <MenuItem>
+      <Link to='/viewClient'/>
+      View Client/Customer/Supplier
+      </MenuItem>
     </SubMenu>
     <SubMenu className="pro-sidebar-sub-menu" title="Users" >
       <MenuItem>Add New User</MenuItem>

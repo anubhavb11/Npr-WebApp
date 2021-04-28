@@ -13,6 +13,7 @@ import VerifyOutChallan from './components/VerifyChallans/verifyOutChallan'
 import ViewChallan from './components/ViewChallans/ViewChalln';
 import ViewOutChallan from './components/ViewChallans/ViewOutChallan';
 import Dev from './components/Devleopers/Dev'
+import ViewClient from './components/Client/ViewClient'
 export default class App extends React.Component {
   render(){
     return(
@@ -31,6 +32,7 @@ export default class App extends React.Component {
           <Route path='/developers' component={Dev} />
           <Route path='/verifyOutChallan' render={(props)=>props.location.state?<VerifyOutChallan ChallanId={props.location.state.ChallanId} /> :<VerifyOutChallan/> } />
           <Route path='/developers' component={Dev}/>
+          <Route path='/viewClient' component={ViewClient} />
 
        </div>
 
