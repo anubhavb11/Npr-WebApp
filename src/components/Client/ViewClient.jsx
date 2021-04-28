@@ -31,8 +31,8 @@ const ViewClient = () => {
             
             {/* <h1 onClick={getClient} >Hlo</h1> */}
             { listClient.map(item =>(
-                <Clients Type={item.Type} FirmName={item.FirmName} ContactPerson = {item.ContactPerson} Phone={item.Phone} 
-                City={item.City}   GSTIN={item.GSTIN} />
+                <Clients Type={item.Type} FirmName={item.FirmName} ContactPerson = {item.NameofPerson} Phone={item.Contact[0].Phone} 
+                City={item.Address[0].City}   GSTIN={item.GSTIN} />
             ))}
             </div>
 
