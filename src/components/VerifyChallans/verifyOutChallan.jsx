@@ -21,7 +21,7 @@ export default function VerifyOutChallan(props) {
        console.log(response.data);
        setOutChallan(response.data);
     }
-  
+
     useEffect(getOutChallan,[]);
     console.log(outChallanList);
     console.log(props);
